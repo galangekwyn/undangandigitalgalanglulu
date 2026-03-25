@@ -25,6 +25,13 @@
     </div>
   </section>
 
+  <!-- Personal Invitation -->
+  <section class="py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-6">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 id="personal-invite" class="text-lg sm:text-xl md:text-2xl font-semibold text-pink-700"></h2>
+    </div>
+  </section>
+
   <!-- Profil -->
   <section class="py-6 sm:py-8 md:py-12 lg:py-16 px-3 sm:px-4 md:px-6">
     <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-5 sm:p-6 md:p-8">
@@ -124,6 +131,24 @@
 
   <!-- Countdown Script -->
   <script>
+    // Personal Invitation - Ambil parameter dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('nama');
+    const partner = urlParams.get('partner');
+
+    // Tampilkan nama tamu
+    if (nama && partner) {
+      document.getElementById("personal-invite").innerText =
+        `Kepada Yth. ${nama} & ${partner}`;
+    } else if (nama) {
+      document.getElementById("personal-invite").innerText =
+        `Kepada Yth. ${nama}`;
+    } else {
+      document.getElementById("personal-invite").innerText =
+        `Kepada Yth. Tamu Undangan`;
+    }
+
+    // Countdown Timer
     const targetDate = new Date("Aug 1, 2026 10:00:00").getTime();
     const countdown = document.getElementById("countdown");
     setInterval(() => {
