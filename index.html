@@ -174,7 +174,7 @@
       
       try {
         const { data, error } = await supabaseClient
-          .from('guestbookMessages')
+          .from('guestbookmessages')
           .select('*')
           .order('created_at', { ascending: false });
         
@@ -230,7 +230,7 @@
       try {
         // Save to Supabase
         const { data, error } = await supabaseClient
-          .from('guestbookMessages')
+          .from('guestbookmessages')
           .insert([
             {
               nama: nama,
