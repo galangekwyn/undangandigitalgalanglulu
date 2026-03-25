@@ -223,6 +223,10 @@
       const now = new Date();
       const tanggal = now.toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' });
       
+      console.log('Submitting guestbook form...');
+      console.log('Supabase Client:', supabaseClient);
+      console.log('Form data:', { nama, ucapan, tanggal });
+      
       try {
         // Save to Supabase
         const { data, error } = await supabaseClient
@@ -234,6 +238,8 @@
               tanggal: tanggal
             }
           ]);
+        
+        console.log('Response from Supabase:', { data, error });
         
         if (error) throw error;
         
@@ -249,7 +255,8 @@
         }, 300);
       } catch (error) {
         console.error('Error saving message:', error);
-        alert('Gagal menyimpan pesan. Silahkan coba lagi.');
+        console.error('Error details:', error.message || JSON.stringify(error));
+        alert(`Gagal menyimpan pesan:\n${error.message || 'Unknown error'}`);
       }
     });
 
