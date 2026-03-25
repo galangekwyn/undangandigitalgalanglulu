@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Undangan Pernikahan</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts -->
@@ -9,113 +10,114 @@
   <style>
     body { font-family: 'Poppins', sans-serif; }
     h1, h2 { font-family: 'Great Vibes', cursive; }
+    * { box-sizing: border-box; }
   </style>
 </head>
 <body class="bg-pink-50 text-gray-800">
 
   <!-- Hero Section -->
-  <section class="flex flex-col items-center justify-center h-screen bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=800&fit=crop');">
+  <section class="flex flex-col items-center justify-center min-h-screen bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=800&fit=crop');">
     <div class="absolute inset-0 bg-pink-900 bg-opacity-50"></div>
-    <div class="relative text-center text-white px-4">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-4">Galang & Fadlun</h1>
-      <p class="text-lg sm:text-xl md:text-2xl mb-4 md:mb-6">1 Agustus 2026</p>
-      <div id="countdown" class="text-lg sm:text-xl md:text-2xl font-semibold text-white"></div>
+    <div class="relative text-center text-white px-4 sm:px-6 py-8">
+      <h1 class="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-1 sm:mb-2 md:mb-4 leading-tight">Galang & Fadlun</h1>
+      <p class="text-base xs:text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4 md:mb-6">1 Agustus 2026</p>
+      <div id="countdown" class="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-white"></div>
     </div>
   </section>
 
   <!-- Profil -->
-  <section class="py-8 sm:py-12 md:py-16 px-4">
-    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6 sm:p-8">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 text-center">Profil Mempelai</h2>
-      <p class="text-sm sm:text-base mb-2 text-center">Galang Eka Wiyono, putra dari Sentot Wiyono & Siti Maryam</p>
-      <p class="text-sm sm:text-base text-center">Fadlun Andalusia, putri dari Suryadi & Neneng Alfariyan</p>
+  <section class="py-6 sm:py-8 md:py-12 lg:py-16 px-3 sm:px-4 md:px-6">
+    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-5 sm:p-6 md:p-8">
+      <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-3 sm:mb-4 md:mb-6 text-center">Profil Mempelai</h2>
+      <p class="text-xs sm:text-sm md:text-base mb-2 text-center leading-relaxed">Galang Eka Wiyono, putra dari Sentot Wiyono & Siti Maryam</p>
+      <p class="text-xs sm:text-sm md:text-base text-center leading-relaxed">Fadlun Andalusia, putri dari Suryadi & Neneng Alfariyan</p>
     </div>
   </section>
 
   <!-- Detail Acara -->
-  <section class="py-8 sm:py-12 md:py-16 px-4">
-    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6 sm:p-8 text-center">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6">Detail Acara</h2>
-      <p class="text-sm sm:text-base mb-2">Akad Nikah: 1 Agustus 2026, 10.00 WIB</p>
-      <p class="text-sm sm:text-base mb-2">Resepsi: 1 Agustus 2026, 13.00 WIB</p>
-      <p class="text-sm sm:text-base mb-4">Gedung Aula SMK Negeri 57 Jakarta</p>
-      <a href="https://www.google.com/maps/search/Gedung+Aula+SMK+Negeri+57+Jakarta" target="_blank" class="inline-block bg-pink-600 text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-pink-700 text-sm sm:text-base transition">Lihat Lokasi</a>
+  <section class="py-6 sm:py-8 md:py-12 lg:py-16 px-3 sm:px-4 md:px-6">
+    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-5 sm:p-6 md:p-8 text-center">
+      <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-3 sm:mb-4 md:mb-6">Detail Acara</h2>
+      <p class="text-xs sm:text-sm md:text-base mb-1 sm:mb-2">Akad Nikah: 1 Agustus 2026, 10.00 WIB</p>
+      <p class="text-xs sm:text-sm md:text-base mb-1 sm:mb-2">Resepsi: 1 Agustus 2026, 13.00 WIB</p>
+      <p class="text-xs sm:text-sm md:text-base mb-3 sm:mb-4">Gedung Aula SMK Negeri 57 Jakarta</p>
+      <a href="https://www.google.com/maps/search/Gedung+Aula+SMK+Negeri+57+Jakarta" target="_blank" class="inline-block bg-pink-600 text-white px-3 sm:px-5 md:px-6 py-2 rounded-lg hover:bg-pink-700 text-xs sm:text-sm md:text-base transition">Lihat Lokasi</a>
     </div>
   </section>
 
   <!-- Wedding Gift -->
-  <section class="py-8 sm:py-12 md:py-16 px-4">
-    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6 sm:p-8 text-center">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6">Wedding Gift</h2>
-      <p class="text-sm sm:text-base mb-2">BCA: 547461261</p>
-      <p class="text-xs sm:text-sm text-gray-600 mb-4">Fadlun Andalusia</p>
-      <p class="text-sm sm:text-base mb-2">BRI: 204601011538505</p>
-      <p class="text-xs sm:text-sm text-gray-600">Galang Eka Wiyono</p>
+  <section class="py-6 sm:py-8 md:py-12 lg:py-16 px-3 sm:px-4 md:px-6">
+    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-5 sm:p-6 md:p-8 text-center">
+      <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-3 sm:mb-4 md:mb-6">Wedding Gift</h2>
+      <p class="text-xs sm:text-sm md:text-base mb-1">BCA: 547461261</p>
+      <p class="text-xs text-gray-600 mb-3">Fadlun Andalusia</p>
+      <p class="text-xs sm:text-sm md:text-base mb-1">BRI: 204601011538505</p>
+      <p class="text-xs text-gray-600">Galang Eka Wiyono</p>
     </div>
   </section>
 
   <!-- Galeri -->
-  <section class="py-8 sm:py-12 md:py-16 px-4">
+  <section class="py-6 sm:py-8 md:py-12 lg:py-16 px-3 sm:px-4 md:px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl mb-6 sm:mb-8 text-center">Galeri Foto</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=300&fit=crop" alt="Wedding Photo 1" class="rounded-lg shadow-md hover:scale-105 transition-transform">
-        <img src="https://images.unsplash.com/photo-1511795409486-a01980e01a18?w=400&h=300&fit=crop" alt="Wedding Photo 2" class="rounded-lg shadow-md hover:scale-105 transition-transform">
-        <img src="https://images.unsplash.com/photo-1540575467063-178f50002cbc?w=400&h=300&fit=crop" alt="Wedding Photo 3" class="rounded-lg shadow-md hover:scale-105 transition-transform">
+      <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 md:mb-8 text-center">Galeri Foto</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=300&fit=crop" alt="Wedding Photo 1" class="rounded-lg shadow-md hover:scale-105 transition-transform w-full">
+        <img src="https://images.unsplash.com/photo-1511795409486-a01980e01a18?w=400&h=300&fit=crop" alt="Wedding Photo 2" class="rounded-lg shadow-md hover:scale-105 transition-transform w-full">
+        <img src="https://images.unsplash.com/photo-1540575467063-178f50002cbc?w=400&h=300&fit=crop" alt="Wedding Photo 3" class="rounded-lg shadow-md hover:scale-105 transition-transform w-full">
       </div>
     </div>
   </section>
 
   <!-- RSVP Section -->
-  <section class="py-8 sm:py-12 md:py-16 px-4 bg-pink-100">
-    <div class="max-w-sm mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-md">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl mb-6 text-center">Konfirmasi Kehadiran</h2>
+  <section class="py-6 sm:py-8 md:py-12 lg:py-16 px-3 sm:px-4 md:px-6 bg-pink-100">
+    <div class="max-w-sm mx-auto bg-white p-5 sm:p-6 md:p-8 rounded-lg shadow-md">
+      <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 text-center">Konfirmasi Kehadiran</h2>
       <form action="https://formspree.io/f/xqegzgvr" method="POST">
         <label class="block mb-4">
-          <span class="text-sm sm:text-base text-gray-700 block mb-2">Nama Lengkap</span>
-          <input type="text" name="nama" required class="w-full text-sm sm:text-base border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-pink-500 focus:border-pink-500 focus:ring-1">
+          <span class="text-xs sm:text-sm md:text-base text-gray-700 block mb-2">Nama Lengkap</span>
+          <input type="text" name="nama" required class="w-full text-xs sm:text-sm md:text-base border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-pink-500 focus:border-pink-500 focus:ring-1">
         </label>
         <label class="block mb-4">
-          <span class="text-sm sm:text-base text-gray-700 block mb-2">Email</span>
-          <input type="email" name="email" required class="w-full text-sm sm:text-base border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-pink-500 focus:border-pink-500 focus:ring-1">
+          <span class="text-xs sm:text-sm md:text-base text-gray-700 block mb-2">Email</span>
+          <input type="email" name="email" required class="w-full text-xs sm:text-sm md:text-base border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-pink-500 focus:border-pink-500 focus:ring-1">
         </label>
         <label class="block mb-6">
-          <span class="text-sm sm:text-base text-gray-700 block mb-2">Apakah Anda akan hadir?</span>
-          <select name="kehadiran" required class="w-full text-sm sm:text-base border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-pink-500 focus:border-pink-500 focus:ring-1">
+          <span class="text-xs sm:text-sm md:text-base text-gray-700 block mb-2">Apakah Anda akan hadir?</span>
+          <select name="kehadiran" required class="w-full text-xs sm:text-sm md:text-base border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-pink-500 focus:border-pink-500 focus:ring-1">
             <option value="">-- Pilih --</option>
             <option value="Ya">Ya, saya akan hadir</option>
             <option value="Tidak">Maaf, saya tidak bisa hadir</option>
           </select>
         </label>
-        <button type="submit" class="w-full bg-pink-600 text-white py-2 px-4 rounded-md hover:bg-pink-700 text-sm sm:text-base font-medium transition">Kirim Konfirmasi</button>
+        <button type="submit" class="w-full bg-pink-600 text-white py-2 px-4 rounded-md hover:bg-pink-700 text-xs sm:text-sm md:text-base font-medium transition">Kirim Konfirmasi</button>
       </form>
     </div>
   </section>
 
   <!-- Guestbook Section -->
-  <section class="py-8 sm:py-12 md:py-16 px-4">
-    <div class="max-w-sm mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-md">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl mb-6 text-center">Ucapan Tamu</h2>
+  <section class="py-6 sm:py-8 md:py-12 lg:py-16 px-3 sm:px-4 md:px-6">
+    <div class="max-w-sm mx-auto bg-white p-5 sm:p-6 md:p-8 rounded-lg shadow-md">
+      <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 text-center">Ucapan Tamu</h2>
       <form id="guestbookForm" class="guestbook-form">
         <label class="block mb-4">
-          <span class="text-sm sm:text-base text-gray-700 block mb-2">Nama</span>
-          <input type="text" name="nama_tamu" required class="w-full text-sm sm:text-base border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-pink-500 focus:border-pink-500 focus:ring-1">
+          <span class="text-xs sm:text-sm md:text-base text-gray-700 block mb-2">Nama</span>
+          <input type="text" name="nama_tamu" required class="w-full text-xs sm:text-sm md:text-base border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-pink-500 focus:border-pink-500 focus:ring-1">
         </label>
         <label class="block mb-6">
-          <span class="text-sm sm:text-base text-gray-700 block mb-2">Ucapan</span>
-          <textarea name="ucapan" rows="4" required class="w-full text-sm sm:text-base border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-pink-500 focus:border-pink-500 focus:ring-1 resize-none"></textarea>
+          <span class="text-xs sm:text-sm md:text-base text-gray-700 block mb-2">Ucapan</span>
+          <textarea name="ucapan" rows="4" required class="w-full text-xs sm:text-sm md:text-base border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-pink-500 focus:border-pink-500 focus:ring-1 resize-none"></textarea>
         </label>
-        <button type="submit" class="w-full bg-pink-600 text-white py-2 px-4 rounded-md hover:bg-pink-700 text-sm sm:text-base font-medium transition">Kirim Ucapan</button>
+        <button type="submit" class="w-full bg-pink-600 text-white py-2 px-4 rounded-md hover:bg-pink-700 text-xs sm:text-sm md:text-base font-medium transition">Kirim Ucapan</button>
       </form>
     </div>
   </section>
 
   <!-- Display Guestbook Messages Section -->
-  <section class="py-8 sm:py-12 md:py-16 px-4 bg-gray-50">
+  <section class="py-6 sm:py-8 md:py-12 lg:py-16 px-3 sm:px-4 md:px-6 bg-gray-50">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl mb-6 sm:mb-8 text-center">Pesan Tamu</h2>
-      <div id="messagesContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <p class="col-span-full text-center text-gray-400 text-sm">Belum ada pesan</p>
+      <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 md:mb-8 text-center">Pesan Tamu</h2>
+      <div id="messagesContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-3 sm:gap-4">
+        <p class="col-span-full text-center text-gray-400 text-xs sm:text-sm">Belum ada pesan</p>
       </div>
     </div>
   </section>
@@ -145,9 +147,9 @@
       }
       
       container.innerHTML = messages.map(msg => `
-        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border-l-4 border-pink-600 hover:shadow-md transition">
-          <h3 class="font-semibold text-pink-700 mb-2 text-sm sm:text-base">${escapeHtml(msg.nama)}</h3>
-          <p class="text-gray-700 text-xs sm:text-sm whitespace-pre-wrap mb-3 leading-relaxed">${escapeHtml(msg.ucapan)}</p>
+        <div class="bg-white p-3 sm:p-4 md:p-5 rounded-lg shadow-sm border-l-4 border-pink-600 hover:shadow-md transition">
+          <h3 class="font-semibold text-pink-700 mb-2 text-xs sm:text-sm md:text-base truncate">${escapeHtml(msg.nama)}</h3>
+          <p class="text-gray-700 text-xs sm:text-sm whitespace-pre-wrap mb-2 leading-relaxed line-clamp-4">${escapeHtml(msg.ucapan)}</p>
           <p class="text-xs text-gray-400">${msg.tanggal}</p>
         </div>
       `).join('');
@@ -199,10 +201,10 @@
   </script>
 
   <!-- Footer Section -->
-  <footer class="py-6 sm:py-8 px-4 bg-pink-900 text-white text-center">
-    <p class="text-sm sm:text-base mb-2">Terima kasih atas doa dan dukungan Anda</p>
-    <p class="text-xs sm:text-sm text-pink-200">Galang Eka Wiyono & Fadlun Andalusia</p>
-    <p class="text-xs text-pink-300 mt-3">&copy; 2026 Wedding Invitation</p>
+  <footer class="py-4 sm:py-6 md:py-8 px-3 sm:px-4 md:px-6 bg-pink-900 text-white text-center">
+    <p class="text-xs sm:text-sm md:text-base mb-2">Terima kasih atas doa dan dukungan Anda</p>
+    <p class="text-xs text-pink-200">Galang Eka Wiyono & Fadlun Andalusia</p>
+    <p class="text-xs text-pink-300 mt-2 sm:mt-3">&copy; 2026 Wedding Invitation</p>
   </footer>
 </body>
 </html>
