@@ -7,10 +7,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="supabase-config.js"></script>
+  <script src="supabase-config.js?v=2"></script>
   <style>
     * {margin: 0; padding: 0; box-sizing: border-box;}
     body {font-family: 'Poppins', sans-serif; background-color: #faf8f3; color: #4a4a4a;}
+    body.no-scroll {overflow: hidden; height: 100vh;}
     .font-display {font-family: 'Playfair Display', serif;}
     .font-script {font-family: 'Great Vibes', cursive;}
     .gradient-text {background: linear-gradient(135deg, #c084b8 0%, #a89ec8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;}
@@ -31,9 +32,9 @@
     <div class="absolute top-0 left-0 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
     
-    <div class="relative text-center max-w-4xl mx-auto px-4 py-20 md:py-0 fade-in">
+    <div class="relative text-center max-w-5xl mx-auto px-4 py-20 md:py-0 fade-in">
       <p class="text-amber-700 text-sm md:text-base tracking-widest uppercase mb-6">Kami Mengundang Anda</p>
-      <h1 class="font-script text-6xl md:text-8xl gradient-text mb-2">Galang & Fadlun</h1>
+      <h1 class="font-script text-5xl md:text-6xl lg:text-7xl gradient-text mb-2 leading-snug" style="word-spacing: 0.15em; letter-spacing: -0.02em;">Galang & Fadlun</h1>
       <p class="text-gray-500 text-lg md:text-2xl mb-12 font-light">Merayakan ikatan cinta kami</p>
       
       <div class="mb-16">
@@ -292,6 +293,12 @@
   </footer>
 
   <script>
+    // Lock scroll sampai tombol diklik
+    document.body.classList.add('no-scroll');
+    document.querySelector('a[href="#detail-acara"]').addEventListener('click', function(e) {
+      document.body.classList.remove('no-scroll');
+    });
+    
     const urlParams = new URLSearchParams(window.location.search);
     const nama = urlParams.get('nama');
     const partner = urlParams.get('partner');
